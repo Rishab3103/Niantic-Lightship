@@ -1,0 +1,1357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>8.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{C9330040-2961-85D5-1654-0DF8119723C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>ARDK</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2020_3_30;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_NATIVE_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_RUNTIME_PERMISSIONS;ENABLE_ENGINE_CODE_STRIPPING;ENABLE_ONSCREEN_KEYBOARD;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;ENABLE_VIDEO;PLATFORM_ANDROID;UNITY_ANDROID;UNITY_ANDROID_API;ENABLE_EGL;ENABLE_NETWORK;ENABLE_RUNTIME_GI;ENABLE_CRUNCH_TEXTURE_COMPRESSION;UNITY_CAN_SHOW_SPLASH_SCREEN;UNITY_HAS_GOOGLEVR;UNITY_HAS_TANGO;ENABLE_SPATIALTRACKING;PLATFORM_EXTENDS_VULKAN_DEVICE;PLATFORM_HAS_MULTIPLE_SWAPCHAINS;UNITY_ANDROID_SUPPORTS_SHADOWFILES;ENABLE_UNITYADS_RUNTIME;UNITY_UNITYADS_API;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>Android:13</UnityBuildTarget>
+    <UnityVersion>2020.3.30f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\CompressedUInt64Serializer.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Meshing\MeshObjectsGenerator.cs" />
+    <Compile Include="Assets\ARDK\AR\ReferenceImage\ARReferenceImageFactory.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\AwarenessUtils.cs" />
+    <Compile Include="Assets\ARDK\AR\Networking\ARNetworkingEventArgs\AnyARNetworkingInitializedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\_VideoStreamHelper.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\UnreliableBroadcastTransformPacker.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Preloading\IFeaturePreloader.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Camera\_MockFrameBufferProvider.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\CoverageClient\_NativeCoverageClient.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\SceneComponents\MockMap.cs" />
+    <Compile Include="Assets\ARDK\AR\IARVideoFormat.cs" />
+    <Compile Include="Assets\ARDK\Rendering\FrameRenderer\_MockFrameRenderer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\MatrixUtils.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\NetworkedFieldValueChangedMode.cs" />
+    <Compile Include="Assets\ARDK\Rendering\FrameRenderer\_ARCoreFrameRenderer.cs" />
+    <Compile Include="Assets\ARDK\AR\ARFrameDisposalPolicy.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\UploadChunkBody_Ret.cs" />
+    <Compile Include="Assets\ARDK\AR\ReferenceImage\IARReferenceImage.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\PlaneClassification.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\IItemSerializer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Networking\DefaultMessageHandler.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\ResponseCallback_FunctionApplicationBridgeBase.cs" />
+    <Compile Include="Assets\ARDK\AR\Networking\ARNetworkingFactory.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Meshing\MeshObjectsUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\ApplicationChunkFetcher_FunctionApplicationBridge.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\_NativeWayspotAnchor.cs" />
+    <Compile Include="Assets\ARDK\Rendering\RenderFeatureProvider\ARRenderFeatureProvider.cs" />
+    <Compile Include="Assets\ARDK\Extensions\SavedRenderingSettings.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\Bounds.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\RequestCallback_FunctionApplicationBridgeBase.cs" />
+    <Compile Include="Assets\ARDK\AR\Frame\_IARFrame.cs" />
+    <Compile Include="Assets\ARDK\AR\Image\_NativeImagePlane.cs" />
+    <Compile Include="Assets\ARDK\Extensions\UnityLifecycleDriver.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Camera\_MockCameraConfiguration.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\GlobalSerializer.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\GeoserviceMessages\_LocalizationTargetsResponse.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_ARAnchorFactory.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\GCSServiceInfo.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Collections\EmptyReadOnlyCollection.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Parser\ZXingBarcodeParser.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Scanner\MarkerScannerSettings.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARCameraPositionHistoryHelper.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\IMockARSession.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Collections\_ReadOnlyDictionary.cs" />
+    <Compile Include="Assets\ARDK\Networking\TransportType.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\AnchorType.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\Unity\NetworkSceneSpawnManifest.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\Contexts\ArrayLengthLimiter.cs" />
+    <Compile Include="Assets\ARDK\Extensions\MapVisualization\ARMapController.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\GameboardCreatedArgs.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\UploadAuth_Ret.cs" />
+    <Compile Include="Assets\ARDK\AR\Image\_NativeImageBuffer.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\PathFindingNode.cs" />
+    <Compile Include="Assets\ARDK\AR\LightEstimate\_NativeARLightEstimate.cs" />
+    <Compile Include="Assets\ARDK\Rendering\FrameRenderer\IARFrameRenderer.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\_SerializableDepthBufferSerializer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\DoubleSerializer.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorStatusUpdate.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\ConnectionFailedArgs.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_KeyValuePair.cs" />
+    <Compile Include="Assets\ARDK\Configuration\_NativeArdkConfig.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\FrameUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Extensions\_AssetDatabaseExtension.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingFactory.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Collections\_EmptyReadOnlyDictionary.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\FlatBuffers\ByteBuffer.cs" />
+    <Compile Include="Assets\ARDK\AR\AwarenessBufferProcessor.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\Spawning\ServerSpawningEventArgs\ServerSpawnedArgs.cs" />
+    <Compile Include="Assets\ARDK\Networking\IMultipeerNetworking.cs" />
+    <Compile Include="Assets\ARDK\Rendering\SRP\ARSessionFeature.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\CameraTrackingStateChangedArgs.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Permissions\AndroidPermissionRequester.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\GeoserviceMessages\_LocalizationTargetsRequest.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Semantics\Generators\IDepthPointCloud.cs" />
+    <Compile Include="Assets\ARDK\AR\Camera\_NativeARCamera.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\CoverageArea.cs" />
+    <Compile Include="Assets\ARDK\AR\IARCamera.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\Generators\_DepthPointCloud.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\SceneComponents\MockPlaneAnchor.cs" />
+    <Compile Include="Assets\ARDK\LocationService\LatLng.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\ARSessionChangesCollector.cs" />
+    <Compile Include="Assets\ARDK\AR\IARFrame.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\ApplicationChunkFetcher_FunctionApplicationBridgeBase.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\CoverageClient\ResponseStatus.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\IHlapiSession.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotBackendTopologyPINVOKE.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\_SerializableAwarenessBufferSerializer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\UInt16Serializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotDriver.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\_NativeWayspotAnchorsConfiguration.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\PeerDataReceivedArgs.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\ChunkStatus.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_FriendTypeAsserter.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Semantics\IAwarenessBufferProcessor.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\Generators\IDepthPointCloud.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\Contexts\_TypeDeserializationContext.cs" />
+    <Compile Include="Assets\ARDK\AR\MergedAnchorInfo.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\GameboardFactory.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\IMessageStreamReplicator.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Collections\_ReadOnlyCollectionExtensions.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\_NativeAwarenessBufferBase.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\AR\Networking\_RemoteDeviceARNetworkingConstructor.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Meshing\MeshObjectsClearedArgs.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\BaseItemSerializer.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\CoverageClient\_MockCoverageClient.cs" />
+    <Compile Include="Assets\ARDK\AR\TrackingState.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\ARSessionInterruptionEndedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\Generators\DepthPointCloudGenerator.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\Spawning\IServerAuthoritativeSpawner.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\MeshBlocksUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorStatusUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\Networking\NetworkingErrorCode.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\_SerializableARMeshData.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Networking\MessageHandlerBase.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorResolvedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\IImagePlane.cs" />
+    <Compile Include="Assets\ARDK\AR\ReferenceImage\ByteOrderInfo.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Preloading\_MockFeaturePreloader.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_EasyConnection.cs" />
+    <Compile Include="Assets\ARDK\Networking\Clock\_NativeCoordinatedClock.cs" />
+    <Compile Include="Assets\ARDK\LocationService\LocationServiceStatus.cs" />
+    <Compile Include="Assets\ARDK\AR\_IARSession.cs" />
+    <Compile Include="Assets\ARDK\AR\IncorrectlyUsedNativeClassException.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_RemoteDeviceRole.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\ByteSerializer.cs" />
+    <Compile Include="Assets\ARDK\Rendering\FrameRenderer\_RemoteFrameRenderer.cs" />
+    <Compile Include="Assets\ARDK\AR\Image\_SerializableImageBuffer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Preloading\Feature.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\MultiRate.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\Spawning\AddressablePrefabManifest.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotFuncRateTicket.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Input\Legacy\PlatformAgnosticInput.cs" />
+    <Compile Include="Assets\ARDK\AR\VideoFormat\_NativeARVideoFormat.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\GeoserviceMessages\_CoverageAreasRequest.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\Results\CoverageAreasResult.cs" />
+    <Compile Include="Assets\ARDK\AR\Camera\CameraIntrinsics.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\ZXingMarkerGenerator.cs" />
+    <Compile Include="Assets\ARDK\LocationService\_NativeLocationServiceAdapter.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Optional.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\MockGrapeshotUploadData.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\nar_csharp_proto\csharp\ArCommonMetadata.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\MeshBlocksClearedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\ARHardwareCapability.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorPayload.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\MockGrapeshotSession.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\_MeshDataParser.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\Spawning\GameObjectSpawning\IGameObjectInstantiator.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Authority\IAuthorityReplicator.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\SByteSerializer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\_MockARSessionMediator.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\CoverageClient\ICoverageClient.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\ARMeshConstants.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\PeerAddedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\SLAM\MarkerSyncer\NativeMarkerSyncer.cs" />
+    <Compile Include="Assets\ARDK\AR\PointCloud\_ARPointCloudFactory.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\IGameboard.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\Results\LocalizationTargetsResult.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\SpatialTree.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotUploadFlatbuffersPINVOKE.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_CallbackQueue.cs" />
+    <Compile Include="Assets\ARDK\Internals\_ARDKLibrary.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\_NativeARMeshData.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\_MockWayspotAnchor.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\UploadSessionInfo.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\CompressedUInt32Serializer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Extensions\_StreamExtensions.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Input\InputSystem\InputInteractionHandler.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_SerializableARAnchorFactory.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\UploadAuth.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_UpdateLoop.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\QuaternionSerializer.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\IWayspotAnchorsConfiguration.cs" />
+    <Compile Include="Assets\ARDK\AR\PlaneGeometry\_NativeARPlaneGeometry.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\IARMesh.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\BooleanSerializer.cs" />
+    <Compile Include="Assets\ARDK\Networking\NetworkMessageSizeLimits.cs" />
+    <Compile Include="Assets\ARDK\Configuration\ArdkGlobalConfig.cs" />
+    <Compile Include="Assets\ARDK\AR\IImagePlanes.cs" />
+    <Compile Include="Assets\ARDK\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\ARDK\Rendering\RenderFeatureProvider\IRenderFeatureProvider.cs" />
+    <Compile Include="Assets\ARDK\AR\Camera\_ARCameraFactory.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\_AwarenessBufferBase.cs" />
+    <Compile Include="Assets\ARDK\External\EnumFlagDrawer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Networking\_MockMultipeerNetworking.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\ServiceAuths.cs" />
+    <Compile Include="Assets\ARDK\Rendering\_VirtualCamera.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\cs_helpers\TableUtils.cs" />
+    <Compile Include="Assets\ARDK\AR\Image\_ImageFactory.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\MockGrapeshotUploadChunkResponse.cs" />
+    <Compile Include="Assets\ARDK\AR\SLAM\ARMap\IARMap.cs" />
+    <Compile Include="Assets\ARDK\AR\Image\_SerializableImageBufferSerializer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Networking\_IEditorARNetworkingSessionMediator.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\CoverageClient\CoverageClientFactory.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\GeoserviceMessages\_ResponseStatusTranslator.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\CameraIntrinsicsSerializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotMultiRatePINVOKE.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\AR\Networking\_RemoteDeviceARNetworkingHandler.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARSessionListener.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Extensions\_TextureExtensions.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Planefinding\PlanefindingGrid.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Collections\EmptyArdkReadOnlyCollection.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\AgentConfiguration.cs" />
+    <Compile Include="Assets\ARDK\AR\RuntimeEnvironment.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\Rate.cs" />
+    <Compile Include="Assets\ARDK\AR\ReferenceImage\Orientation.cs" />
+    <Compile Include="Assets\ARDK\Extensions\MarkerSync\BarcodeDisplay.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Networking\_MockARNetworkingSessionsMediator.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Networking\_RemoteEditorARNetworking.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Logging\LogHandler\UnityARLogHandler.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\IARAnchor.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\FinishedCallback_FunctionApplicationBridgeBase.cs" />
+    <Compile Include="Assets\ARDK\Configuration\Internal\ArdkConfigInternalExtension.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\_NativeDepthBuffer.cs" />
+    <Compile Include="Assets\ARDK\AR\Networking\_NativeARNetworking.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_StaticMembersValidatorScope.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\RequestCallback_FunctionApplicationBridge.cs" />
+    <Compile Include="Assets\ARDK\AR\InterpolationMode.cs" />
+    <Compile Include="Assets\ARDK\AR\Frame\_SerializableARFrameBase.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\GrapeshotSession.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\MessageReceivedEventArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\ARSessionDeinitializedArgs.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\AR\_RemoteBufferConfiguration.cs" />
+    <Compile Include="Assets\ARDK\AR\Image\_NativeImagePlanes.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\Data\EditorToDevice.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Planefinding\ARPlaneManager.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Authority\GreedyAuthorityReplicator.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Data\NetworkedDataDescriptor.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Collections\ARDKReadOnlyCollection.cs" />
+    <Compile Include="Assets\ARDK\AR\Image\_SerializableImagePlanes.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_GcObserver.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\SimpleSerializableSerializer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\NativeArraySerializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotRatePINVOKE.cs" />
+    <Compile Include="Assets\ARDK\AR\ARError.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Data\PacketInfo.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\FlatBuffers\ByteBufferUtil.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\BinarySerializer.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\NetworkedFieldValueChangedEventArgs.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\Topology.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Data\ReplicationMode.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_NativeARPlaneAnchor.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Camera\Input\_LegacyCameraController.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\AR\_RemoteDeviceARSessionHandler.cs" />
+    <Compile Include="Assets\ARDK\LocationService\LocationUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotMultiRate.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Logging\LogHandler\IARLogHandler.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Parser\IParserResult.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\INetworkGroup.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\_MockARSession.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\StringSerializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\SessionStatus.cs" />
+    <Compile Include="Assets\ARDK\Configuration\_IArdkConfig.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARCameraPositionHelper.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\_SerializableAwarenessBufferBase.cs" />
+    <Compile Include="Assets\ARDK\Configuration\Authentication\ArdkAuthConfig.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\LocalUploadSessionDBAccessor.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\UploadChunkRequest_Ret.cs" />
+    <Compile Include="Assets\ARDK\Utilities\NARConversions.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\NetworkGroup.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Parser\BarcodeParserResult.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\DepthFeatures.cs" />
+    <Compile Include="Assets\ARDK\AR\IARFaceGeometry.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\IArmMessageStream.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Semantics\ISemanticBuffer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\BinaryDeserializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\ResponseCallback_FunctionApplicationBridge.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\FlatBuffers\FlatBufferConstants.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\PathFindingBehaviour.cs" />
+    <Compile Include="Assets\ARDK\External\EnumFlagAttribute.cs" />
+    <Compile Include="Assets\ARDK\AR\Frame\_ARFrameFactory.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_StaticMemberValidator.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARRenderingManager.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\_FileARMeshData.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_SerializableARPlaneAnchor.cs" />
+    <Compile Include="Assets\ARDK\LocationService\ILocationService.cs" />
+    <Compile Include="Assets\ARDK\Networking\IPeer.cs" />
+    <Compile Include="Assets\ARDK\AR\Networking\MarkerScanCoordinator.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\UploadSessionDBAccessor.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Metadata\StationaryMarkerMetadata.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Collections\_ArrayFromElement.cs" />
+    <Compile Include="Assets\ARDK\Utilities\MathUtils.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\FinishedCallback_FunctionApplicationBridge.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\MessageStreamReplicator.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\VpsCoverage\VpsCoverageResponses.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\ARCoreInstaller.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\GeoserviceMessages\_CoverageAreasResponse.cs" />
+    <Compile Include="Assets\ARDK\AR\Frame\_SerializableARFrame.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\Spawning\IAddressablePrefabManifest.cs" />
+    <Compile Include="Assets\ARDK\Networking\_Peer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_UsbRemoteConnection.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARImageDetectionManager.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Metadata\EmbeddedStationaryMetadataSerializer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\_RemoteEditorARSession.cs" />
+    <Compile Include="Assets\ARDK\Networking\DataInfo.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\BackendTopology.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Networking\_MockARNetworking.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\_AwarenessBufferHelper.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorService.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\AnyARSessionInitializedArgs.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\UploadChunkRequest.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\Vector2Serializer.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\_SerializableDepthBuffer.cs" />
+    <Compile Include="Assets\ARDK\AR\_SessionFrameSharedLogic.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\MockPlayer.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\SessionStatusReceivedFromArmArgs.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\DisconnectedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\TrackingStateReason.cs" />
+    <Compile Include="Assets\ARDK\LocationService\LocationInfo.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\Int16Serializer.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\LocalizationFailureReason.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_NativeARBasicAnchor.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Scanner\MarkerScannerStatus.cs" />
+    <Compile Include="Assets\ARDK\Utilities\PermissionRequester.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotUploadFlatbuffers.cs" />
+    <Compile Include="Assets\ARDK\Utilities\TaskUtility.cs" />
+    <Compile Include="Assets\ARDK\Extensions\NetworkSessionManager.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\DataReceivedFromArmArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Semantics\SemanticsProvider\SemanticBufferProcessor.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\IDepthBuffer.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\QueryingShouldSessionAttemptRelocalizationArgs.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Meshing\MeshObjSaver.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\PeerRemovedArgs.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\GuidSerializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\FlatBuffers\Struct.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\IVirtualStudioManager.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\Unity\PrefabManifest.cs" />
+    <Compile Include="Assets\ARDK\Internals\StartupSystems.cs" />
+    <Compile Include="Assets\ARDK\AR\Networking\ARNetworkingEventArgs\ARNetworkingDeinitializedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\IARWorldTrackingConfiguration.cs" />
+    <Compile Include="Assets\ARDK\AR\IARSession.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Camera\Input\_CameraInputSystemProvider.cs" />
+    <Compile Include="Assets\ARDK\AR\PointCloud\_NativeARPointCloud.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\Quad.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\IARConfiguration.cs" />
+    <Compile Include="Assets\ARDK\Rendering\ARSessionBuffersHelper.cs" />
+    <Compile Include="Assets\ARDK\Extensions\MapVisualization\ARMapVisualizationRenderer.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\Utils.cs" />
+    <Compile Include="Assets\ARDK\AR\Networking\ARNetworkingEventArgs\PeerStateReceivedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Semantics\ISemanticBufferProcessor.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\ModelSettings.cs" />
+    <Compile Include="Assets\ARDK\LocationService\CompassUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\MockWayspotAnchorImplementation.cs" />
+    <Compile Include="Assets\ARDK\LocationService\LocationStatusUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\SceneComponents\MockMesh.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\ArrayOfSealedSerializer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\ImageDataUtils.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\RORStage.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\PathFinding.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\ByteArraySerializer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_Memory.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\Matrix4x4Serializer.cs" />
+    <Compile Include="Assets\ARDK\AR\Camera\_SerializableARCamera.cs" />
+    <Compile Include="Assets\ARDK\Utilities\VersionUtilities\ARDKGlobalVersion.cs" />
+    <Compile Include="Assets\ARDK\Configuration\Internal\_PlaceholderArdkConfigInternal.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\_UntypedToTypedSerializerAdapter.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\FuncRateTicket.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotDriverPINVOKE.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\Driver.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\_SerializableARConfiguration.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARSessionManager.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\Contexts\_TypeSerializationContext.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARNetworkingManager.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\ConnectedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\DepthProvider\DepthBufferProcessor.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Authority\Role.cs" />
+    <Compile Include="Assets\ARDK\VpsCoverage\LocalizationTarget.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\GrapeshotUploadChunkResponse.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\MapsArgs.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_InternetRemoteConnection.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Collections\_WeakValueDictionary.cs" />
+    <Compile Include="Assets\ARDK\Rendering\FrameRenderer\_ARPlaybackFrameRenderer.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionFactory.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\_SerializableARWorldTrackingConfiguration.cs" />
+    <Compile Include="Assets\ARDK\AR\ImageFormat.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\_SerializableWayspotAnchorsConfiguration.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Semantics\_SerializableSemanticBufferSerializer.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\Unity\AuthBehaviour.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Parser\IMarkerParser.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Metadata\BasicMetadataSerializer.cs" />
+    <Compile Include="Assets\ARDK\Rendering\SRP\_RenderPipelineInternals.cs" />
+    <Compile Include="Assets\ARDK\Rendering\SRP\_CommandBufferPass.cs" />
+    <Compile Include="Assets\ARDK\Rendering\ResolutionMode.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\PlaneClassificationStatus.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\Unity\Helpers\NetworkedUnityObjectEditor.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Scanner\ARFrameMarkerScannerGotResultArgs.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Networking\_IEditorMultipeerSessionMediator.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Depth\DepthMeshOcclusionManager.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\GcsSignedUrlUploadService.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\IARPlaneAnchor.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\PlaneAlignment.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\_IEditorARSessionMediator.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Semantics\_NativeSemanticBuffer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\FloatSerializer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_IRemoteConnectionCompat.cs" />
+    <Compile Include="Assets\ARDK\AR\PlaneGeometry\_SerializableARPlaneGeometry.cs" />
+    <Compile Include="Assets\ARDK\LocationService\_UnityLocationService.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Preloading\_NativeFeaturePreloader.cs" />
+    <Compile Include="Assets\ARDK\Internals\EditorUtilities\_AutofillDrawer.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\AnyMultipeerNetworkingInitializedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorStatusCode.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Routing\NetworkId.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Metadata\MarkerMetadata.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_SerializableARAnchor.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\IWayspotAnchor.cs" />
+    <Compile Include="Assets\ARDK\Rendering\ARFrameRendererFactory.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\FuncRateTicketCallback_FunctionApplicationBridge.cs" />
+    <Compile Include="Assets\ARDK\Extensions\_ExtensionsExecutionOrder.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\GridNode.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Depth\ARDepthManager.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARVideoFeed.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\_NativeARWorldTrackingConfiguration.cs" />
+    <Compile Include="Assets\ARDK\AR\HitTest\_SerializableARHitTestResult.cs" />
+    <Compile Include="Assets\ARDK\AR\ReferenceImage\_NativeARReferenceImage.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotUploadSessionDBAccessor.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\AnchorsMergedArgs.cs" />
+    <Compile Include="Assets\ARDK\Configuration\Internal\_NativeArdkConfigInternal.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\UploadChunkResponse.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\_IWayspotAnchorImplementation.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\RORStagePINVOKE.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\RemoteConnectionUI.cs" />
+    <Compile Include="Assets\ARDK\AR\IImageBuffer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Networking\IMockARNetworking.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\_IInternalTrackable.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\Path.cs" />
+    <Compile Include="Assets\ARDK\Utilities\VersionUtilities\_NativeARDKVersion.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Meshing\MockMeshInfo.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Extensions\_DictionaryExtensions.cs" />
+    <Compile Include="Assets\ARDK\Rendering\_VirtualCameraFactory.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_SerializableARImageAnchor.cs" />
+    <Compile Include="Assets\ARDK\AR\SLAM\ARMap\_SerializableARMap.cs" />
+    <Compile Include="Assets\ARDK\Utilities\SafeGCHandle.cs" />
+    <Compile Include="Assets\ARDK\Recording\ARCaptureConfig.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\ARSessionFailedArgs.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Extensions\_GuidExtensions.cs" />
+    <Compile Include="Assets\ARDK\AR\SLAM\MarkerSyncer\IMarkerSyncer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_LocalDeviceInfo.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\ColorSerializer.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\Spawning\GameObjectSpawning\UnityGameObjectInstantiator.cs" />
+    <Compile Include="Assets\ARDK\AR\IARLightEstimate.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\StageNamedInstance.cs" />
+    <Compile Include="Assets\ARDK\LocationService\SpoofLocationService.cs" />
+    <Compile Include="Assets\ARDK\AR\_Convert.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\Camera\Input\_CameraController.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_RemoteConnection.cs" />
+    <Compile Include="Assets\ARDK\AR\CompressedImage.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\PlaneDetection.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\WorldAlignment.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Input\InputSystem\InputInteractions.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Semantics\Generators\_DepthPointCloud.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARSemanticSegmentationManager.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotFuncRateTicketPINVOKE.cs" />
+    <Compile Include="Assets\ARDK\Extensions\MapVisualization\IMapVisualizationController.cs" />
+    <Compile Include="Assets\ARDK\Recording\ARCapture.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARNetworkingStateVisualizer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_InternetRemoteConnectionCompat.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\Networking\_RemoteDeviceMultipeerNetworkingHandler.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\SceneComponents\MockDetectableBase.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ISerializationContext.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\LocalizationStateUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\FlatBuffers\Table.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\ArmMessageStream.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\INetworkedDataHandler.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\PendingBytesRate.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\ARWorldTrackingConfigurationFactory.cs" />
+    <Compile Include="Assets\ARDK\AR\Frame\_NativeARFrame.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_SerializableARBasicAnchor.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\PersistentKeyValueUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_HttpClient.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\RateTicketReturn.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\CompressedInt64Serializer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\CompressedInt32Serializer.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\NetworkedDataHandlerBase.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\ApplicationRate.cs" />
+    <Compile Include="Assets\ARDK\AR\ContextAwarenessArgs.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Permissions\AndroidPermissionManager.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_NativeARAnchor.cs" />
+    <Compile Include="Assets\ARDK\AR\ReferenceImage\AlphaInfo.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\NativeWayspotAnchorImplementation.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\FlatBuffers\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\Surface.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\AR\_RemoteDeviceARSessionConstructor.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorsResolvedArgs.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Scanner\ARFrameMarkerScanner.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\_NativeARConfiguration.cs" />
+    <Compile Include="Assets\ARDK\AR\VideoFormat\_SerializableARVideoFormat.cs" />
+    <Compile Include="Assets\ARDK\Internals\EditorUtilities\_AutofillAttribute.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Logging\ARLog.cs" />
+    <Compile Include="Assets\ARDK\Extensions\FeaturePreloadManager.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_ThreadCheckedObject.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\FileARMesh.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\Unity\NetworkedUnityObject.cs" />
+    <Compile Include="Assets\ARDK\Networking\ServerConfiguration.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\Spawning\ServerAuthoritativeSpawnerBase.cs" />
+    <Compile Include="Assets\ARDK\Utilities\VersionUtilities\_IARDKVersion.cs" />
+    <Compile Include="Assets\ARDK\Configuration\_SerializeableArdkConfig.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\ServiceInfos.cs" />
+    <Compile Include="Assets\ARDK\Rendering\RenderTarget.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\GameboardUpdatedArgs.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\Unity\NetworkSpawner.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\ARSoftwareSupport.cs" />
+    <Compile Include="Assets\ARDK\Networking\_NativeMultipeerNetworking.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\GameboardModel.cs" />
+    <Compile Include="Assets\ARDK\Configuration\Internal\_IArdkConfigInternal.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\ResolutionSerializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\GCSSignedAuth.cs" />
+    <Compile Include="Assets\ARDK\LocationService\LocationServiceFactory.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\UploadChunkBody.cs" />
+    <Compile Include="Assets\ARDK\AR\_CppAddressAndScale.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotSessionPINVOKE.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Scanner\IMarkerScanner.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Scanner\ARFrameMarkerScannerStatusChangedArgs.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\Data\DeviceToEditor.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\ArrayOfUnsealedSerializer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\BooleanArraySerializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\RateTicket.cs" />
+    <Compile Include="Assets\ARDK\AR\PointCloud\_SerializableARPointCloud.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\InterprocDriver.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotApplicationRate.cs" />
+    <Compile Include="Assets\ARDK\Networking\Clock\ICoordinatedClock.cs" />
+    <Compile Include="Assets\ARDK\AR\_NativeARSession.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\ror\schema\UUID.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\LibraryHelper.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Networking\_MockPeer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\ChunkFetcherParams.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\GameboardManager.cs" />
+    <Compile Include="Assets\ARDK\Networking\ARSim\Spawning\ServerSpawningEventArgs\ServerDespawnedArgs.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_RemoteConnectionStatus.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\MockPlayConfiguration.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\UploadServiceInfo_Ret.cs" />
+    <Compile Include="Assets\ARDK\AR\LightEstimate\_SerializableARLightEstimate.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\SceneComponents\MockAnchorBase.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\Effects\DepthMeshRendererFeature.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_ByteArrayComparer.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\ARSessionInterruptedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\IARPlaneGeometry.cs" />
+    <Compile Include="Assets\ARDK\Configuration\_PlaceholderARDKConfig.cs" />
+    <Compile Include="Assets\ARDK\Extensions\CapabilityChecker.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\SceneComponents\MockSemanticLabel.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\FlatBuffers\IFlatbufferObject.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Networking\_MockNetworkingSessionsMediator.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\IntPtrSerializer.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\ARSessionRanArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\IARImageAnchor.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\HlapiSession.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\Anonymous.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\AnchorExtensions.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\MockArdkPlayerProfile.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotUploadSessionDBAccessorPINVOKE.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\UploadServiceInfo.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\INetworkedField.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Preloading\PreloadedFeatureState.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotRate.cs" />
+    <Compile Include="Assets\ARDK\AR\HitTest\ARHitTestResultType.cs" />
+    <Compile Include="Assets\ARDK\AR\ReferenceImage\_SerializableARReferenceImage.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\ARSessionPausedArgs.cs" />
+    <Compile Include="Assets\ARDK\Rendering\FrameRenderer\ARFrameRenderer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Scanner\ARFrameMarkerScannerReadyArgs.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\Waypoint.cs" />
+    <Compile Include="Assets\ARDK\Rendering\FrameRenderer\_ARKitFrameRenderer.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorsConfiguationFactory.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\GrapeshotUploadData.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Semantics\_SerializableSemanticBuffer.cs" />
+    <Compile Include="Assets\ARDK\AR\LightEstimate\_ARLightEstimateFactory.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\RateVector.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Depth\ARDepthInterpolationAdapter.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\FlatBuffers\FlatBufferBuilder.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\SceneComponents\MockMeshSequence.cs" />
+    <Compile Include="Assets\ARDK\AR\NativeAccess.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\_IMockARSession.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\GCSServiceAccount.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\Unity\NetTransform.cs" />
+    <Compile Include="Assets\ARDK\AR\Image\_SerializableImagePlaneSerializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\nar_csharp_proto\csharp\ArdkTelemetry.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\_AwarenessBufferFactory.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\_ARWorldTrackingConfigurationSerializer.cs" />
+    <Compile Include="Assets\ARDK\AR\HitTest\_SerializableARHitTestResultFactory.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\Vector4Serializer.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\Effects\DepthMeshOccluder.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Preloading\FeaturePreloaderFactory.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_ReferenceComparer.cs" />
+    <Compile Include="Assets\ARDK\AR\Networking\NativeARNetworkingMode_Experimental.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_NativeARImageAnchor.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\LocalizationState.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\Unity\NetworkedBehaviour.cs" />
+    <Compile Include="Assets\ARDK\AR\IARPointCloud.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotBackendTopology.cs" />
+    <Compile Include="Assets\ARDK\Utilities\TypedId\IRepresentedBy.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Meshing\MeshSaver.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\Visualiser.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\ISessionMediator.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionEventArgs\AnchorsArgs.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\GCSSignedComposeURL.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\BinarySerializerOrDeserializer.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\IDataBuffer.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\Effects\DepthMeshBufferHelper.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\ArraySerializer.cs" />
+    <Compile Include="Assets\ARDK\AR\ARSessionRunOptions.cs" />
+    <Compile Include="Assets\ARDK\Utilities\_CatchUpEvent.cs" />
+    <Compile Include="Assets\ARDK\Utilities\TypedId\TypedId.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\SessionResultReceivedFromArmArgs.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\UploadChunkInfo.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\GcsInfoProvider.cs" />
+    <Compile Include="Assets\ARDK\AR\SLAM\ARMap\_NativeARMap.cs" />
+    <Compile Include="Assets\ARDK\Networking\MultipeerNetworkingEventArgs\DeinitializedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\Image\_SerializableImagePlane.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotSession.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\UnlimitedRate.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\_AwarenessInitializationCodeTranslator.cs" />
+    <Compile Include="Assets\ARDK\Rendering\PropertyBindings.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\_DeviceHandle.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Networking\_RemoteEditorMultipeerNetworking.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\MeshBlock.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\Session.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Platform.cs" />
+    <Compile Include="Assets\ARDK\AR\Anchors\_SerializableAnchorsByType.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\unity_ext\WifiOnlyRate.cs" />
+    <Compile Include="Assets\ARDK\AR\Configuration\_ARConfigurationValidator.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Meshing\ARMeshManager.cs" />
+    <Compile Include="Assets\ARDK\AR\HitTest\IARHitTestResult.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\SceneComponents\MockImageAnchor.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Depth\DepthPointCloudManager.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\Depth\IDepthBufferProcessor.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\IAwarenessBuffer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\FlatBuffers\Offset.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Collections\EmptyArray.cs" />
+    <Compile Include="Assets\ARDK\Extensions\Gameboard\Gameboard.cs" />
+    <Compile Include="Assets\ARDK\AR\Networking\ARNetworkingEventArgs\PeerPoseReceivedArgs.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\_VirtualStudioManager.cs" />
+    <Compile Include="Assets\ARDK\AR\SLAM\ARMap\_ARMapFactory.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorsCreatedArgs.cs" />
+    <Compile Include="Assets\ARDK\AR\HitTest\_NativeARHitTestResult.cs" />
+    <Compile Include="Assets\ARDK\AR\Mesh\_IARMeshData.cs" />
+    <Compile Include="Assets\ARDK\Recording\ARCaptureSetMetadataConfig.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\NetworkIdSerializer.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Extensions\_ObjectSerializationExtensions.cs" />
+    <Compile Include="Assets\ARDK\Utilities\Marker\Metadata\IMetadataSerializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\GrapeshotApplicationRatePINVOKE.cs" />
+    <Compile Include="Assets\ARDK\Utilities\ArdkEventHandler.cs" />
+    <Compile Include="Assets\ARDK\Networking\Clock\LocalCoordinatedClock.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Remote\Networking\_RemoteDeviceMultipeerNetworkingConstructor.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\ror_upload_schema_unity\ror_upload_schema_unity\schema\upload\ror\schema\upload\GCSSignedWriteURL.cs" />
+    <Compile Include="Assets\ARDK\AR\Awareness\AwarenessParameters.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\FBIntermediateBuffer.cs" />
+    <Compile Include="Assets\ARDK\AR\Networking\IARNetworking.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\grapeshot_unity_application\FuncRateTicketCallback_FunctionApplicationBridgeBase.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\EnumSerializer.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARConfigChanger.cs" />
+    <Compile Include="Assets\ARDK\Utilities\BinarySerialization\ItemSerializers\Vector3Serializer.cs" />
+    <Compile Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\libs\grapeshot_unity_application\services\MockBackendTopology.cs" />
+    <Compile Include="Assets\ARDK\Extensions\ARFeaturePointRenderer.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\Networking\ARSimHandlers\MockARSimBase.cs" />
+    <Compile Include="Assets\ARDK\AR\WayspotAnchors\WayspotAnchorController.cs" />
+    <Compile Include="Assets\ARDK\Networking\HLAPI\Object\NetworkedField.cs" />
+    <Compile Include="Assets\ARDK\VirtualStudio\AR\SceneComponents\MockSceneConfiguration.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\ARDK\Rendering\Resources\YCbCrShader.shader" />
+    <None Include="Assets\ARDK\Extensions\Meshing\Materials\MeshNormalFresnel.shader" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\System.Numerics.Vectors.4.4.0\netstandard2.0\Niantic.System.Numerics.Vectors.xml" />
+    <None Include="Assets\ARDK\Extensions\Meshing\Materials\MeshInvisible.shader" />
+    <None Include="Assets\ARDK\Rendering\Resources\ARCoreFrameLegacy.shader" />
+    <None Include="Assets\ARDK\ARDK.asmdef" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\Google.Protobuf.3.19.4\net45\Niantic.Google.Protobuf.dll" />
+    <None Include="Assets\ARDK\VirtualStudio\AR\Camera\Resources\Segmentation.shader" />
+    <None Include="Assets\ARDK\Extensions\Planefinding\PlanefindingGrid.shader" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\Google.Protobuf.3.19.4\net45\Niantic.Google.Protobuf.xml" />
+    <None Include="Assets\ARDK\VirtualStudio\AR\Camera\Resources\FlipImage.shader" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\System.Numerics.Vectors.4.4.0\netstandard2.0\Niantic.System.Numerics.Vectors.dll" />
+    <None Include="Assets\ARDK\AR\Awareness\Depth\Generators\Resources\DepthPointCloudGenerator.compute" />
+    <None Include="Assets\ARDK\Rendering\Resources\ARCoreFrame.shader" />
+    <None Include="Assets\ARDK\Rendering\Resources\ExternalBlit.shader" />
+    <None Include="Assets\ARDK\VirtualStudio\AR\Camera\Resources\UnityToMetricDepth.shader" />
+    <None Include="Assets\ARDK\Extensions\Meshing\Materials\MeshNormal.shader" />
+    <None Include="Assets\ARDK\Rendering\Resources\ARKitFrame.shader" />
+    <None Include="Assets\ARDK\External\Plugins\zxing.unity.dll" />
+    <None Include="Assets\ARDK\Rendering\Resources\ARCoreFrameBiplanar.shader" />
+    <None Include="Assets\ARDK\AR\Awareness\Depth\Effects\Resources\DepthMeshOccluder.shader" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\System.Memory.4.5.3\netstandard2.0\Niantic.System.Memory.dll" />
+    <None Include="Assets\ARDK\Rendering\Resources\EditorFrame.shader" />
+    <None Include="Assets\ARDK\AR\Awareness\Depth\Effects\Resources\DepthMeshOcclusionEffect.shader" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\System.Runtime.CompilerServices.Unsafe.4.5.2\netstandard2.0\Niantic.System.Runtime.CompilerServices.Unsafe.xml" />
+    <None Include="Assets\ARDK\AR\Awareness\Depth\Effects\Resources\ContextAwarenessUtils.cginc" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\System.Buffers.4.4.0\netstandard2.0\Niantic.System.Buffers.xml" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\System.Buffers.4.4.0\netstandard2.0\Niantic.System.Buffers.dll" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\System.Memory.4.5.3\netstandard2.0\Niantic.System.Memory.xml" />
+    <None Include="Assets\ARDK\Plugins\unity_exports\ardk_client_platform\Plugins\Android\AndroidManifest.xml" />
+    <None Include="Assets\ARDK\Plugins\Niantic.Protobufs\System.Runtime.CompilerServices.Unsafe.4.5.2\netstandard2.0\Niantic.System.Runtime.CompilerServices.Unsafe.dll" />
+    <None Include="Assets\ARDK\Rendering\Resources\BGRAShader.shader" />
+    <None Include="Assets\ARDK\Rendering\Resources\BGRANonOESShader.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
+      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
+    </Reference>
+    <Reference Include="zxing.unity">
+      <HintPath>Assets\ARDK\External\Plugins\zxing.unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Niantic.Google.Protobuf">
+      <HintPath>Assets\ARDK\Plugins\Niantic.Protobufs\Google.Protobuf.3.19.4\net45\Niantic.Google.Protobuf.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.30f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
